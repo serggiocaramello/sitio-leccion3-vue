@@ -1,6 +1,5 @@
 Vue.component('navbar',{
-    template:/*html*/
-    `
+    template:/*html*/`
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
