@@ -1,7 +1,5 @@
-Vue.component('navbar',{
-    template:/*html*/
-    `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark ">
+Vue.component("navbar", {
+  template: `<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/logo.gif" alt="" width="150" height="50">
@@ -34,11 +32,5 @@ Vue.component('navbar',{
         </div>
     </nav>
     
-    `
-})
-
-
-var nav = new Vue ({
-    el: "#navbar",
-   
-})
+    `,
+});
