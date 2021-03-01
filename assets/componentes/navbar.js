@@ -32,12 +32,5 @@ Vue.component('navbar',{
             </div>
         </div>
     </nav>
-    
-    `
-})
-
-
-var nav = new Vue ({
-    el: "#navbar",
-   
-})
+    `,
+});

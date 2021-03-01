@@ -14,10 +14,6 @@ Vue.component('hero',{
                 backgroundSize: "cover"
             },
             bordeStyle: '-webkit-text-stroke: 1px black'  
-        }
-    }
-})
-
-var hero = new Vue ({
-    el: '#hero'
-})
+        };
+    },
+});
