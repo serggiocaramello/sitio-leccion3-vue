@@ -1,5 +1,6 @@
 Vue.component("hero", {
   template: /*html*/ `
+
     <div class="container p-5 text-end text-white" :style="heroStyle">
         <h1 class=" display-1" :style="bordeStyle"><strong>Invertir en bienes<br>
         raices es ver 10<br>
