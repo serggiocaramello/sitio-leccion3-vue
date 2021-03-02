@@ -1,8 +1,8 @@
 
 Vue.component('suscripcion',{
     template:`
-    <div class="container p-2  text-light bg-dark " >
-        <div class="row">
+    <div class="container  text-light bg-dark " >
+        <div class="row p-2">
             <div class="col-8 text-left ">
             <h2>{{suscripcionText}}</h2>
             </div>
