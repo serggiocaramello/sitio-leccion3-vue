@@ -11,29 +11,35 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="navbar">
-        <!-- navbar -->
-      </div>
-      <div id="hero">
-        <!-- Hero -->
-      </div>
-      <div id="suscripción">
-        <!-- Suscripcion -->
+    <div id="app" class="container-fluid">
+      <div class="row">
+        <navbar></navbar>
       </div>
       <div class="row">
-        <div id="aside">
-          <!-- aside -->
-        </div>
-        <div id="propiedades">
-          <!-- propiedades -->
+        <hero></hero>
+      </div>
+      <div class="row">
+        <suscripcion>
+          
+        </suscripcion>
+      </div>
+      <div class="row">
+        <miaside></miaside>
+        <div class="col-md-8 cards__container">
+          <card></card>
         </div>
       </div>
-      <div id="footer">
-        <!-- footer -->
+      <div class="row">
+        <afooter></afooter>
       </div>
     </div>
 
@@ -44,7 +50,20 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
     <!-- Desde aca se van llamando los archivos de los distintos componentes -->
-    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/componentes/navbar.js"></script>
+    <script src="./assets/componentes/hero.js"></script>
+    <script src="./assets/componentes/aside.js"></script>
+    <script src="./assets/componentes/propiedades.js"></script>
+    <script src="./assets/componentes/footer.js"></script>
+    <script src="./assets/componentes/suscripcion.js"></script>
+    
+    <!-- Despues de llamar a los componentes se crea la instancia de Vue -->
+    <script>
+      new Vue({
+        el: "#app",
+      });
+    </script>
   </body>
 </html>
