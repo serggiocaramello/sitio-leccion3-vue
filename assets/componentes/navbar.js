@@ -7,30 +7,27 @@ Vue.component('navbar',{
             </a>
             <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                    <li v-for="link of links" :class="link.classLi">
+                        <a :class="link.classA" href="#">{{link.texto}}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">COMPRAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ALQUILER</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FINANZAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">VENTAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTENOS</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
     `,
+    data(){
+        return{
+            links : [
+                {classLi: 'nav-item', classA: 'nav-link active', texto: 'INICIO'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'COMPRAR'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'ALQUILER'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'FINANZAS'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'SERVICIOS'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'VENTAS'},
+                {classLi: 'nav-item', classA: 'nav-link', texto: 'CONTACTENOS'}
+            ]
+        }
+        
+    }
 });
